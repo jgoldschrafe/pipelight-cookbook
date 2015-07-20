@@ -11,5 +11,14 @@ platforms:
 suites:
   - name: pipelight
     run_list:
+      - "recipe[apt]"
       - "recipe[pipelight]"
     attributes:
+      apt:
+        compile_time_update: true
+      pipelight:
+        plugins:
+          flash:
+            accept_license: true
+          silverlight5.1:
+            accept_license: true

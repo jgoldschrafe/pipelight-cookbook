@@ -5,4 +5,5 @@
 
 include_recipe 'pipelight::repo'
 include_recipe 'pipelight::install'
+include_recipe 'pipelight::config'
 include_recipe 'pipelight::plugins'
