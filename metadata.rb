@@ -4,7 +4,7 @@ maintainer_email 'jeff@rabb.it'
 license          'MIT License'
 description      'Installs/Configures pipelight'
 long_description 'Installs/Configures pipelight'
-version          '0.1.1' # Dev
+version          '0.1.2'
 
 supports         'ubuntu', '>= 14.04'
 
