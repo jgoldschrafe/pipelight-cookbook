@@ -10,14 +10,3 @@ cookbook_file '/usr/share/pipelight/configs/pipelight-x64-flash' do
   mode 00644
   action :create
 end
-
-apt_package 'pipelight' do
-  options '--install-recommends'
-  action :install
-end
-
-execute 'update Pipelight dependency-installer script' do
-  command 'pipelight-plugin --update'
-  user 'root'
-  action :run
-end
