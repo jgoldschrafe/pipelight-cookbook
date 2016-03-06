@@ -6,7 +6,18 @@ provisioner:
   name: chef_solo
 
 platforms:
-  - name: ubuntu-14.04
+  - name: ubuntu-15.04
+    driver:
+      box: rabbit-ubuntu-15.04-chef-12.7.2
+      box_url: http://rabbit-sysops.s3.amazonaws.com/vagrant-boxes/rabbit-ubuntu-15.04-chef-12.7.2.box
+      customize:
+        memory: 1024
+  - name: ubuntu-16.04
+    driver:
+      box: rabbit-ubuntu-16.04-chef-12.7.2
+      box_url: http://rabbit-sysops.s3.amazonaws.com/vagrant-boxes/rabbit-ubuntu-16.04-chef-12.7.2.box
+      customize:
+        memory: 1024
 
 suites:
   - name: pipelight
