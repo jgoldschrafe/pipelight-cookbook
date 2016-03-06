@@ -3,7 +3,7 @@
 # Recipe:: install
 #
 
-apt_package 'pipelight' do
+apt_package 'pipelight-multi' do
   options '--install-recommends'
   action :install
 end
